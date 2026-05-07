@@ -25,6 +25,10 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/api/www/avatar/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
     ],
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
