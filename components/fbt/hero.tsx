@@ -81,41 +81,25 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: Feature Card */}
-        <div className="hidden lg:block">
-          <div className="bg-white/8 backdrop-blur-md border border-white/15 rounded-3xl p-8 text-white relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#0ED8FE]/10 rounded-full blur-2xl" />
-            <div className="relative z-10">
-              <div className="text-[#0ED8FE] font-black text-2xl leading-tight mb-1">
-                The Brain is Trainable
-              </div>
-              <div className="text-white/80 font-semibold text-lg mb-8">at Any Age.</div>
-
-              <div className="space-y-3 mb-8">
-                {[
-                  'Concussions & Traumatic Brain Injuries',
-                  'Memory Loss & Early Dementia',
-                  'Stroke & Post-Concussion Recovery',
-                  'Vestibular & Balance Disorders',
-                  'Cognitive & Emotional Conditions',
-                  'Proactive Brain Maintenance',
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#0ED8FE] rounded-full flex-shrink-0" />
-                    <span className="text-white/85 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-[#005FDE]/40 border border-[#0ED8FE]/20 rounded-2xl p-5">
-                <div className="text-[#0ED8FE] font-bold text-sm mb-1">
-                  Cognitive Circuit Training®
-                </div>
-                <div className="text-white/75 text-sm leading-relaxed">
-                  South Florida's first personalized brain therapy program — designed by
-                  neurologists for measurable, lasting results.
-                </div>
-              </div>
+        {/* Right: YouTube Video */}
+        <div className="w-full lg:block">
+          <div className="relative">
+            {/* Glow ring behind video */}
+            <div className="absolute -inset-3 bg-[#0ED8FE]/15 rounded-[2rem] blur-xl" />
+            {/* Video container */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/KezY9l2GSKc?rel=0&modestbranding=1&color=white"
+                title="Focus Brain Therapy — Cognitive Circuit Training® Program"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            {/* Caption */}
+            <div className="mt-3 flex items-center justify-center gap-2 text-white/50 text-xs">
+              <span className="w-1.5 h-1.5 bg-[#0ED8FE] rounded-full" />
+              Watch: The Cognitive Circuit Training® Program in Action
             </div>
           </div>
         </div>
