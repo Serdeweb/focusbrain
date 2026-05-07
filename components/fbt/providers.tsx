@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { User } from 'lucide-react'
 
 const providers = [
   {
@@ -56,7 +55,7 @@ export default function Providers() {
 
         {/* Provider Cards */}
         <div className="grid md:grid-cols-2 gap-8">
-          {providers.map(({ photo, name, title, specialty, bio, gradient, initials }) => (
+          {providers.map(({ photo, name, title, specialty, bio, gradient }) => (
             <div
               key={name}
               className="bg-white rounded-3xl shadow-sm border border-[#E2E2E2] overflow-hidden hover:shadow-xl transition-all group"
@@ -66,28 +65,17 @@ export default function Providers() {
 
               <div className="p-8">
                 <div className="flex items-start gap-5 mb-5">
-                  {/* Photo or Avatar */}
+                  {/* Photo */}
                   <div className="flex-shrink-0">
-                    {photo ? (
-                      <div className="w-20 h-20 rounded-2xl overflow-hidden shadow-md border-2 border-[#E2E2E2]">
-                        <Image
-                          src={photo}
-                          alt={name}
-                          width={80}
-                          height={80}
-                          className="w-full h-full object-cover object-top"
-                        />
-                      </div>
-                    ) : (
-                      <div
-                        className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${gradient} flex flex-col items-center justify-center shadow-lg`}
-                      >
-                        <User size={22} className="text-white/60 mb-0.5" />
-                        <span className="text-white font-black text-sm tracking-wide">
-                          {initials}
-                        </span>
-                      </div>
-                    )}
+                    <div className="w-20 h-20 rounded-2xl overflow-hidden shadow-md border-2 border-[#E2E2E2]">
+                      <Image
+                        src={photo}
+                        alt={name}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
                   </div>
 
                   <div className="pt-1">
