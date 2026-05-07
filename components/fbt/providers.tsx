@@ -19,13 +19,12 @@ const providers = [
     gradient: 'from-[#0A2F61] to-[#005FDE]',
   },
   {
-    photo: null,
+    photo: '/Dr.-Lisa-Huseboe.avif',
     name: 'Dr. Lisa Huseboe, DC, MS, CBIS',
     title: 'Neuroplastician',
     specialty: 'Founder & Creator of the Cognitive Circuit Training® Program',
     bio: 'Dr. Lisa Huseboe is the founder and visionary behind Focus Brain Therapy and creator of the CCT Program — a multi-sensory, evidence-based approach to repairing and optimizing brain function after injury. With a decade of experience in neurorehabilitation, she has dedicated her career to helping patients recover from brain injury and reduce cognitive decline.',
     gradient: 'from-[#0D71F7] to-[#0ED8FE]',
-    initials: 'LH',
   },
   {
     photo: '/Helena-Popovic.png',

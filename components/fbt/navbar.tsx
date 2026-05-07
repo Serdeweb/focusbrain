@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
+import Image from 'next/image'
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -30,14 +31,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-[#005FDE] flex items-center justify-center shadow-lg shadow-[#005FDE]/30">
-              <span className="text-white font-black text-xl leading-none">F</span>
-            </div>
-            <div className="leading-tight">
-              <div className="font-black text-[#0A2F61] text-base tracking-tight">FOCUS BRAIN</div>
-              <div className="text-[#005FDE] text-[10px] font-bold tracking-[0.2em] uppercase">Therapy</div>
-            </div>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/Focus-Brain-Therapy-Logo.avif"
+              alt="Focus Brain Therapy"
+              width={160}
+              height={52}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </a>
 
           {/* Desktop Nav */}
