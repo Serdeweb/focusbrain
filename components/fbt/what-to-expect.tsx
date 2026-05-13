@@ -49,7 +49,7 @@ export default function WhatToExpect() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="text-[#0ED8FE] font-bold text-xs uppercase tracking-[0.2em] mb-4">
-            What Patients Can Expect
+            What We Do
           </div>
           <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight mb-6">
             Your Path to{' '}

@@ -31,7 +31,7 @@ export default function WhatWeDo() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="text-[#005FDE] font-bold text-xs uppercase tracking-[0.2em] mb-4">
-            What We Do
+            Our Mission
           </div>
           <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-6">
             Introducing the{' '}
