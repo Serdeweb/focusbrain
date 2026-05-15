@@ -12,8 +12,8 @@ const topLinks = [
 ]
 
 const mainLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
+  { label: 'Our Mission', href: '#about' },
+  { label: 'What We Do', href: '#services' },
   { label: 'Who We Help', href: '#who-we-help' },
   { label: 'Our Team', href: '#team' },
   { label: 'Contact', href: '#contact' },
