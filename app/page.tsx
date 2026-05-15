@@ -6,6 +6,7 @@ import WhatToExpect from '@/components/fbt/what-to-expect'
 import Providers from '@/components/fbt/providers'
 import WhyChooseUs from '@/components/fbt/why-choose-us'
 import Gallery from '@/components/fbt/gallery'
+import Testimonials from '@/components/fbt/testimonials'
 import Contact from '@/components/fbt/contact'
 import Footer from '@/components/fbt/footer'
 
@@ -21,6 +22,7 @@ export default function Page() {
         <Providers />
         <WhyChooseUs />
         <Gallery />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />

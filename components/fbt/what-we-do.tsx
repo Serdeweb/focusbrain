@@ -49,8 +49,8 @@ export default function WhatWeDo() {
         <div className="grid lg:grid-cols-2 gap-10 items-center mb-16">
           <div className="relative rounded-3xl overflow-hidden h-80 lg:h-96 shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=85&auto=format&fit=crop"
-              alt="Cognitive Circuit Training therapy session"
+              src="/Focus-Brain-Therapy-1.webp"
+              alt="Focus Brain Therapy facility — CCT training room"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -58,7 +58,7 @@ export default function WhatWeDo() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F61]/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <div className="bg-white/15 backdrop-blur-sm border border-white/25 rounded-2xl px-5 py-3 inline-block">
-                <span className="text-white font-bold text-sm">Cognitive Circuit Training® Session</span>
+                <span className="text-white font-bold text-sm">Our Facility — Davie, FL</span>
               </div>
             </div>
           </div>

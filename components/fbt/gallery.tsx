@@ -2,30 +2,30 @@ import Image from 'next/image'
 
 const images = [
   {
-    src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&q=85&auto=format&fit=crop',
-    alt: 'Neurologist reviewing brain scan results',
-    caption: 'Advanced Neurological Diagnostics',
+    src: '/Focus-Brain-Therapy-1.webp',
+    alt: 'Focus Brain Therapy CCT training room with blue lighting and therapy screens',
+    caption: 'Our CCT Training Studio',
     span: 'lg:col-span-2 lg:row-span-2',
     height: 'h-72 lg:h-full',
   },
   {
-    src: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=700&q=85&auto=format&fit=crop',
-    alt: 'Doctor consulting with elderly patient',
-    caption: 'Compassionate Patient Care',
+    src: '/Focus-Brain-Therapy-2.webp',
+    alt: 'Cognitive Circuit Training station with BrainHQ software',
+    caption: 'BrainHQ Cognitive Training Station',
     span: '',
     height: 'h-56',
   },
   {
-    src: 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=700&q=85&auto=format&fit=crop',
-    alt: 'Active healthy seniors',
-    caption: 'Life After Recovery',
+    src: '/Focus-Brain-Therapy-3.webp',
+    alt: 'Multiple CCT therapy stations with screens and balance equipment',
+    caption: 'Multi-Station Training Floor',
     span: '',
     height: 'h-56',
   },
   {
-    src: 'https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=900&q=85&auto=format&fit=crop',
-    alt: 'Senior couple living actively',
-    caption: 'Restored Independence & Confidence',
+    src: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=900&q=85&auto=format&fit=crop',
+    alt: 'Doctor consulting with patient',
+    caption: 'Personalized Patient Care',
     span: 'lg:col-span-2',
     height: 'h-56',
   },
@@ -44,8 +44,8 @@ export default function Gallery() {
             Where Recovery Happens
           </h2>
           <p className="text-[#67656E] text-lg max-w-2xl mx-auto">
-            Our Davie, FL facility is equipped with cutting-edge technology and staffed by specialists
-            dedicated to your neurological recovery and brain health.
+            Our Davie, FL facility features cutting-edge CCT equipment and technology, staffed by
+            specialists dedicated to your neurological recovery and brain health.
           </p>
         </div>
 

@@ -44,25 +44,33 @@ export default function WhoWeHelp() {
     <section id="who-we-help" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <div className="text-[#005FDE] font-bold text-xs uppercase tracking-[0.2em] mb-4">
             Who We Help
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-6">
-            We Accept Referrals<br />for Patients With:
+          <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-4">
+            Our Team Is Here for You
           </h2>
-          <p className="text-[#67656E] text-lg max-w-2xl mx-auto">
-            Whether you're recovering from an injury or proactively protecting your brain health,
-            our team is here for you.
+          <p className="text-[#67656E] text-lg max-w-2xl mx-auto mb-5">
+            Whether you're recovering from an injury or proactively supporting your brain health.
           </p>
+
+          {/* Flexible Payment Options callout */}
+          <div className="inline-flex items-center gap-3 bg-[#ECFAFF] border border-[#005FDE]/20 rounded-full px-6 py-3">
+            <div className="w-2 h-2 bg-[#0ED8FE] rounded-full flex-shrink-0" />
+            <span className="text-[#0A2F61] font-semibold text-sm">
+              Flexible Payment Options —{' '}
+              <span className="text-[#005FDE]">Insurance, PPO, Self-Pay, FSA/HSA & Referrals Available</span>
+            </span>
+          </div>
         </div>
 
         {/* Condition Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 mb-14">
           {conditions.map(({ icon: Icon, title, desc, color }) => (
             <div
               key={title}
-              className="rounded-2xl border border-[#E2E2E2] p-7 hover:shadow-lg hover:border-[#005FDE]/20 transition-all group cursor-default"
+              className="rounded-2xl border border-[#E2E2E2] p-7 hover:shadow-lg hover:border-[#005FDE]/20 transition-all cursor-default"
             >
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
