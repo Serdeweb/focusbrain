@@ -105,7 +105,7 @@ export default function Navbar() {
                 href="#contact"
                 className="flex items-center gap-2 bg-[#005FDE] hover:bg-[#0D71F7] text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-md shadow-[#005FDE]/25 whitespace-nowrap"
               >
-                Book Evaluation
+                Book a Consultation
               </a>
             </div>
 
