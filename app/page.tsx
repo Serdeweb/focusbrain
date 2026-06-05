@@ -1,5 +1,6 @@
 import Navbar from '@/components/fbt/navbar'
 import Hero from '@/components/fbt/hero'
+import InsuranceAccepted from '@/components/fbt/insurance-accepted'
 import WhatWeDo from '@/components/fbt/what-we-do'
 import WhoWeHelp from '@/components/fbt/who-we-help'
 import WhatToExpect from '@/components/fbt/what-to-expect'
@@ -16,6 +17,7 @@ export default function Page() {
       <Navbar />
       <main>
         <Hero />
+        <InsuranceAccepted />
         <WhatWeDo />
         <WhoWeHelp />
         <WhatToExpect />
