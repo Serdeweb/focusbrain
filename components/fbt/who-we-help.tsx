@@ -29,22 +29,22 @@ const subsections: SubSection[] = [
       {
         icon: Zap,
         title: 'Concussion / mTBI',
-        desc: 'Mild traumatic brain injuries from sports, accidents, or falls causing headaches, cognitive fog, memory issues, and emotional changes.',
+        desc: 'Brain fog, headaches, dizziness, memory problems, fatigue, and light sensitivity.',
       },
       {
         icon: HeartPulse,
         title: 'Stroke Recovery',
-        desc: 'Targeted rehabilitation helping stroke survivors regain cognitive function, motor skills, balance, and daily independence.',
+        desc: 'Helping the brain build new routes after blood flow injury.',
       },
       {
         icon: Wind,
         title: 'COVID Brain Fog',
-        desc: 'Persistent cognitive symptoms following COVID-19 including difficulty concentrating, memory problems, and mental fatigue.',
+        desc: 'For lingering brain fog, fatigue, slower thinking, and poor focus after COVID.',
       },
       {
         icon: AlertCircle,
         title: 'Anoxic / Hypoxic Brain Injury',
-        desc: 'Brain injuries resulting from oxygen deprivation caused by cardiac events, near-drowning, or other anoxic episodes.',
+        desc: 'When the brain has been affected by reduced oxygen.',
       },
     ],
   },
@@ -58,12 +58,12 @@ const subsections: SubSection[] = [
       {
         icon: Brain,
         title: 'Mild Cognitive Impairment (MCI)',
-        desc: 'Early-stage cognitive changes beyond normal aging. Our proactive programs help slow progression, preserve independence, and improve quality of life.',
+        desc: 'Memory changes, slower processing, word-finding problems, and reduced mental sharpness.',
       },
       {
         icon: Waves,
         title: 'Balance Issues',
-        desc: 'Vestibular and balance disorders affecting stability, coordination, and fall risk. We address the neurological roots of balance dysfunction.',
+        desc: 'Dizziness, unsteadiness, fall risk, vestibular problems, and confidence with walking.',
       },
     ],
   },
@@ -77,17 +77,17 @@ const subsections: SubSection[] = [
       {
         icon: Trophy,
         title: 'Sports Performance',
-        desc: 'Cognitive optimization for athletes seeking faster reaction times, sharper focus, and peak competitive performance.',
+        desc: 'Reaction time, visual tracking, focus, balance, and decision speed.',
       },
       {
         icon: Briefcase,
         title: 'Executive Performance',
-        desc: 'Cognitive enhancement for professionals — improving focus, decision-making, memory, and mental stamina in high-demand environments.',
+        desc: 'Sharper focus, better memory, faster decisions, stress resilience, and cognitive endurance.',
       },
       {
         icon: GraduationCap,
         title: 'Student Performance',
-        desc: 'Brain training programs helping students improve concentration, memory retention, processing speed, and academic performance.',
+        desc: 'Attention, memory, processing speed, learning efficiency, and test confidence.',
       },
     ],
   },

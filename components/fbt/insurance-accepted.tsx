@@ -27,7 +27,7 @@ export default function InsuranceAccepted() {
         </p>
 
         {/* Insurance placeholders */}
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
+        <div className="grid grid-cols-3 max-w-2xl mx-auto gap-4 mb-10">
           {insurers.map((name) => (
             <div
               key={name}
