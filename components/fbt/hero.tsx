@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 w-full grid lg:grid-cols-[2fr_3fr] gap-10 lg:gap-14 items-center">
         {/* Left: headline + CTAs */}
         <div>
-          <div className="inline-flex items-center gap-2 bg-[#EBF5FF] border border-[#005FDE]/30 text-[#005FDE] px-4 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6">
+          <div className="inline-flex items-center gap-2 bg-[#EBF5FF] border border-[#005FDE]/30 text-[#005FDE] px-4 py-2 rounded-full text-sm font-bold tracking-wide mb-6">
             <span className="w-2 h-2 bg-[#005FDE] rounded-full" />
             Build a Better Brain
           </div>
