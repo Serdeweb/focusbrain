@@ -10,7 +10,7 @@ const pillars = [
   {
     icon: Brain,
     title: 'Cognitive Exercises',
-    desc: "Customized brain challenges to sharpen memory, processing speed, focus, and decision-making.",
+    desc: 'Customized brain challenges to sharpen memory, processing speed, focus, and decision-making.',
   },
   {
     icon: Zap,
@@ -30,18 +30,15 @@ export default function WhatWeDo() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="text-[#005FDE] font-bold text-xs uppercase tracking-[0.2em] mb-4">
-            Our Mission
-          </div>
           <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-6">
             Introducing the{' '}
             <span className="text-[#005FDE]">Cognitive Circuit Training®</span>{' '}
             Program
           </h2>
           <p className="text-[#67656E] text-lg max-w-3xl mx-auto leading-relaxed">
-            Our board-certified neurologists lead care using advanced diagnostic tools and prescribe
-            individualized therapy plans — delivered through our proprietary CCT Program. Each
-            session is customized and matched to your specific needs.
+            Our team of medical professionals and therapists will design an individualized, holistic
+            program to address your specific cognitive concerns. We look forward to working with
+            you and your family to help you build a better brain for a better life!
           </p>
         </div>
 
@@ -71,14 +68,15 @@ export default function WhatWeDo() {
                 backgroundSize: '28px 28px',
               }}
             />
-            <p className="relative z-10 text-lg text-white/85 leading-relaxed">
-              CCT integrates{' '}
+            <p className="relative z-10 text-lg text-white/90 leading-relaxed">
+              CCT is based on the latest cutting-edge research in neuroscience and cognitive
+              resilience. It integrates{' '}
               <span className="text-[#0ED8FE] font-semibold">physical activity</span>,{' '}
               <span className="text-[#0ED8FE] font-semibold">cognitive exercises</span>,{' '}
               <span className="text-[#0ED8FE] font-semibold">sensory integration</span>, and{' '}
               <span className="text-[#0ED8FE] font-semibold">emotional regulation</span> to promote{' '}
-              <strong className="text-white">neuroplasticity</strong> and optimize brain recovery.
-              Together, these strengthen your brain's cognitive reserve — its natural backup system.
+              <strong className="text-white">neuroplasticity</strong>, stimulate recovery, and
+              optimize brain function.
             </p>
           </div>
         </div>
@@ -94,7 +92,7 @@ export default function WhatWeDo() {
                 <Icon size={22} className="text-[#005FDE] group-hover:text-white transition-colors" />
               </div>
               <h3 className="font-bold text-[#0A2F61] text-lg mb-2">{title}</h3>
-              <p className="text-[#67656E] text-sm leading-relaxed">{desc}</p>
+              <p className="text-[#67656E] text-base leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>

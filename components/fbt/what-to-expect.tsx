@@ -2,32 +2,32 @@ const steps = [
   {
     num: '01',
     title: 'Comprehensive Neurological Evaluation',
-    desc: 'Advanced diagnostic testing performed by board-certified neurologists to understand your unique condition and baseline function.',
+    desc: 'Our doctors perform comprehensive diagnostic testing to understand your unique condition and baseline function.',
   },
   {
     num: '02',
     title: 'Customized Therapy Plan',
-    desc: 'A personalized Cognitive Circuit Training® plan built around your clinical findings, personal goals, and lifestyle.',
+    desc: 'We build a personalized Cognitive Circuit Training® plan around your clinical findings, personal goals and lifestyle.',
   },
   {
     num: '03',
     title: 'Expert-Monitored Treatment',
-    desc: 'Therapy monitored by neurologists and delivered by skilled clinicians at every step of your recovery journey.',
+    desc: 'We monitor your progress at every step of your recovery journey, and fine tune as needed.',
   },
   {
     num: '04',
     title: 'Multi-Sensory CCT Sessions',
-    desc: 'Engaging, multi-sensory program sessions including multisensory stimulation, balance training, brain challenges, and coordination drills.',
+    desc: 'You will enjoy our engaging, multi-sensory program sessions, which include visual, auditory, olfactory and tactile stimulation integrated with balance training, brain challenges, and coordination games.',
   },
   {
     num: '05',
     title: 'Measurable Outcomes',
-    desc: 'Track real, documented progress in cognition, balance, mood, and physical function — with clear milestones along the way.',
+    desc: 'We track your impressive progress in cognition, balance, mood, and physical function — with clear milestones along the way.',
   },
   {
     num: '06',
     title: 'Long-Term Brain Health Support',
-    desc: 'Clear return-to-work pathways and ongoing support to ensure lasting results and a stronger brain for life.',
+    desc: 'We provide clear return-to-work pathways and ongoing support to ensure lasting results and a stronger brain for life.',
   },
 ]
 
@@ -48,9 +48,6 @@ export default function WhatToExpect() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="text-[#0ED8FE] font-bold text-xs uppercase tracking-[0.2em] mb-4">
-            What We Do
-          </div>
           <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight mb-6">
             Your Path to{' '}
             <span className="text-[#0ED8FE]">Recovery</span>
@@ -72,7 +69,7 @@ export default function WhatToExpect() {
                 {num}
               </div>
               <h3 className="font-bold text-white text-lg mb-3 leading-snug">{title}</h3>
-              <p className="text-white/60 text-sm leading-relaxed">{desc}</p>
+              <p className="text-white/70 text-base leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>

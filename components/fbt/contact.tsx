@@ -24,8 +24,7 @@ export default function Contact() {
             Start Your Recovery Today
           </h2>
           <p className="text-[#67656E] text-lg max-w-2xl mx-auto">
-            Reach out to schedule a consultation or ask us anything. Our team is here to guide you
-            every step of the way.
+            Schedule a free consultation. Our team is here to guide and coach you every step of the way.
           </p>
         </div>
 
@@ -101,9 +100,6 @@ export default function Contact() {
                 >
                   Send Message
                 </button>
-                <p className="text-xs text-[#67656E] text-center">
-                  We accept Medicare and most insurance plans. No obligation.
-                </p>
               </form>
             )}
           </div>

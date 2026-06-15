@@ -14,7 +14,7 @@ const providers = [
     name: 'Alyssa Villalba, PA-C',
     title: 'Physician Assistant',
     specialty: 'Lead CCT Facilitator / Specialist in Brain-Based Functional Recovery',
-    bio: 'Alyssa Villalba is a licensed and board-certified Physician Assistant with a strong clinical foundation in neurology, recovery, and cognitive rehabilitation. As the lead facilitator of the Cognitive Circuit Training® Program at Focus Brain Therapy, Alyssa works hands-on with patients to deliver personalized, evidence-based sessions.',
+    bio: 'Alyssa Villalba is a licensed Physician Assistant with a strong clinical foundation in neurology, recovery, and cognitive rehabilitation. As the lead facilitator of the Cognitive Circuit Training® Program at Focus Brain Therapy, Alyssa works hands-on with patients to deliver personalized, evidence-based sessions.',
     gradient: 'from-[#0A2F61] to-[#005FDE]',
   },
   {
@@ -27,10 +27,10 @@ const providers = [
   },
   {
     photo: '/Helena-Popovic.png',
-    name: 'Dr. Helena Popovic, MD',
-    title: 'Consulting Advisor',
-    specialty: 'Expert on Brain Health & Neuroplasticity',
-    bio: 'Dr. Helena Popovic is an internationally acclaimed medical doctor, keynote speaker, and author specializing in brain optimization, neuroplasticity, and cognitive vitality. As a consulting advisor, she helps guide brain health strategies and tailor interventions that optimize focus, memory, emotional balance, and long-term resilience.',
+    name: 'Dr. Helena Popovic, MBBS',
+    title: 'Consultant Advisor',
+    specialty: 'World-leading authority and best-selling author on brain health',
+    bio: 'Dr. Helena Popovic obtained her Bachelor of Medicine and Surgery (MBBS) from the University of Sydney in Australia, and has been paving the way for a new paradigm in enhancing brain function through neuroplasticity for over three decades. Her philosophy is that education is more powerful than medication, and she believes in growing bolder rather than older. As our consultant advisor, she helps guide brain health strategies and tailor interventions that optimize focus, memory, emotional balance, and long-term resilience.',
     gradient: 'from-[#005FDE] to-[#0A2F61]',
   },
 ]
@@ -41,15 +41,12 @@ export default function Providers() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="text-[#005FDE] font-bold text-xs uppercase tracking-[0.2em] mb-4">
-            Our Team
-          </div>
-          <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-6">
-            Meet Our Providers
+          <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-4">
+            Meet our passionate team
           </h2>
           <p className="text-[#67656E] text-lg max-w-2xl mx-auto">
-            Our board-certified neurologists and clinical specialists bring decades of combined
-            experience in neurological rehabilitation and brain health.
+            We bring together decades of experience in neurological rehabilitation and optimization
+            of brain performance.
           </p>
         </div>
 
@@ -84,7 +81,7 @@ export default function Providers() {
                     <div className="text-[#67656E] text-xs mt-1 leading-snug italic">{specialty}</div>
                   </div>
                 </div>
-                <p className="text-[#67656E] text-sm leading-relaxed border-t border-[#E2E2E2] pt-5">
+                <p className="text-[#67656E] text-base leading-relaxed border-t border-[#E2E2E2] pt-5">
                   {bio}
                 </p>
               </div>
@@ -92,7 +89,7 @@ export default function Providers() {
           ))}
         </div>
 
-        <p className="text-center text-[#67656E] text-sm mt-10">
+        <p className="text-center text-[#67656E] text-base mt-10">
           Partner with Focus Brain Therapy for better patient outcomes.{' '}
           <a href="#contact" className="text-[#005FDE] font-semibold hover:underline">
             Contact us today →
