@@ -13,7 +13,7 @@ const benefits = [
   },
   {
     icon: Users,
-    title: 'Doctors Who Truly Care',
+    title: 'Dedicated Doctors',
     desc: 'Our doctors really care! They are excited to be at the forefront of a medical revolution that is healing and enhancing brains and lives, in a way that seemed impossible only a few decades ago.',
   },
   {

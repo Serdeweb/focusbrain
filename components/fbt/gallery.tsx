@@ -77,9 +77,7 @@ export default function Gallery() {
             <div className="font-black text-[#0A2F61] text-xl mb-1">
               Ready to start your recovery journey?
             </div>
-            <div className="text-[#67656E] text-sm">
-              Same-week appointments available. Medicare & insurance accepted.
-            </div>
+            
           </div>
           <a
             href="#contact"

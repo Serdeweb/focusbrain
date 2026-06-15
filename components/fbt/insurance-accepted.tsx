@@ -49,7 +49,7 @@ export default function InsuranceAccepted() {
 
         {/* WHO WE HELP */}
         <div className="mb-10">
-          <h3 className="text-2xl font-black text-[#0A2F61] mb-4">WHO WE HELP</h3>
+          <h3 className="text-2xl font-black text-[#0A2F61] mb-4">Who we help</h3>
           <ul className="space-y-3 mb-6">
             {whoWeHelpList.map((item) => (
               <li key={item} className="flex items-start gap-3 text-[#3D3D3D] text-base">
