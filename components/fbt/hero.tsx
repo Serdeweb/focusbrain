@@ -69,41 +69,43 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: video */}
-          <div className="relative">
-            <div className="absolute -inset-3 bg-[#005FDE]/8 rounded-[2rem] blur-xl pointer-events-none" />
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E2E2E2] aspect-video">
-              <iframe
-                src="https://www.youtube.com/embed/KezY9l2GSKc?rel=0&modestbranding=1&color=white"
-                title="Focus Brain Therapy — Cognitive Circuit Training® Program"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="w-full h-full"
-              />
+          {/* Right: video + buttons below */}
+          <div className="relative flex flex-col gap-4">
+            <div className="relative">
+              <div className="absolute -inset-3 bg-[#005FDE]/8 rounded-[2rem] blur-xl pointer-events-none" />
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E2E2E2] aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/KezY9l2GSKc?rel=0&modestbranding=1&color=white"
+                  title="Focus Brain Therapy — Cognitive Circuit Training® Program"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="mt-3 flex items-center justify-center gap-2 text-[#67656E] text-sm">
+                <span className="w-1.5 h-1.5 bg-[#005FDE] rounded-full" />
+                Watch: The Cognitive Circuit Training® Program in Action
+              </div>
             </div>
-            <div className="mt-3 flex items-center justify-center gap-2 text-[#67656E] text-sm">
-              <span className="w-1.5 h-1.5 bg-[#005FDE] rounded-full" />
-              Watch: The Cognitive Circuit Training® Program in Action
+
+            {/* Buttons below the video */}
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="#contact"
+                className="flex-1 flex items-center justify-center gap-2 bg-[#005FDE] hover:bg-[#0D71F7] text-white px-6 py-4 rounded-full font-bold text-base transition-all shadow-xl shadow-[#005FDE]/25 hover:scale-[1.02] active:scale-100"
+              >
+                Schedule Your Free Consultation
+                <ArrowRight size={18} />
+              </a>
+              <a
+                href="tel:9544244240"
+                className="flex-1 flex items-center justify-center gap-2 bg-transparent border-2 border-[#005FDE] text-[#005FDE] hover:bg-[#005FDE] hover:text-white px-6 py-4 rounded-full font-bold text-base transition-all whitespace-nowrap"
+              >
+                <Phone size={18} />
+                (954) 424-4240
+              </a>
             </div>
           </div>
-        </div>
-
-        {/* Buttons stretched full width across the bottom */}
-        <div className="flex flex-col sm:flex-row gap-3">
-          <a
-            href="#contact"
-            className="flex-1 flex items-center justify-center gap-2 bg-[#005FDE] hover:bg-[#0D71F7] text-white px-6 py-4 rounded-full font-bold text-base transition-all shadow-xl shadow-[#005FDE]/25 hover:scale-[1.02] active:scale-100"
-          >
-            Schedule Your Free Consultation
-            <ArrowRight size={18} />
-          </a>
-          <a
-            href="tel:9544244240"
-            className="flex-1 flex items-center justify-center gap-2 bg-transparent border-2 border-[#005FDE] text-[#005FDE] hover:bg-[#005FDE] hover:text-white px-6 py-4 rounded-full font-bold text-base transition-all whitespace-nowrap"
-          >
-            <Phone size={18} />
-            (954) 424-4240
-          </a>
         </div>
 
       </div>
