@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
-import Image from 'next/image'
 
 const mainLinks = [
   { label: 'What We Do', href: '#services' },
@@ -46,16 +45,13 @@ export default function Navbar() {
       <div className="bg-[#EBF5FF] border-b border-[#005FDE]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18 py-3">
-            {/* Logo */}
-            <a href="#" className="flex items-center flex-shrink-0">
-              <Image
-                src="/brain/Logo_FBT.png"
-                alt="Focus Brain Therapy"
-                width={190}
-                height={62}
-                className="h-14 w-auto object-contain"
-                priority
-              />
+
+            {/* Mobile: CTA button where logo was */}
+            <a
+              href="#contact"
+              className="md:hidden flex items-center gap-2 bg-[#005FDE] text-white px-4 py-2.5 rounded-full font-semibold text-xs transition-all shadow-md whitespace-nowrap"
+            >
+              Book Your Free Consultation
             </a>
 
             {/* Desktop Nav */}
@@ -71,7 +67,7 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* CTA */}
+            {/* Desktop CTA */}
             <div className="hidden md:flex items-center">
               <a
                 href="#contact"
@@ -81,7 +77,7 @@ export default function Navbar() {
               </a>
             </div>
 
-            {/* Mobile toggle */}
+            {/* Mobile hamburger */}
             <button
               className="md:hidden p-2 rounded-lg hover:bg-[#005FDE]/10 transition-colors"
               onClick={() => setIsOpen(!isOpen)}
