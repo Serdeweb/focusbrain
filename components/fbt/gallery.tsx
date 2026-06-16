@@ -2,30 +2,26 @@ import Image from 'next/image'
 
 const images = [
   {
-    src: '/Focus-Brain-Therapy-1.webp',
-    alt: 'Focus Brain Therapy CCT training room with blue lighting and therapy screens',
-    caption: 'Our CCT Training Studio',
+    src: '/brain/larger%20space%20RCCC%20training%20studio%20(1).jpg',
+    alt: 'Focus Brain Therapy CCT training studio',
     span: 'lg:col-span-2 lg:row-span-2',
     height: 'h-72 lg:h-full',
   },
   {
-    src: '/Focus-Brain-Therapy-2.webp',
-    alt: 'Cognitive Circuit Training station with BrainHQ software',
-    caption: 'BrainHQ Cognitive Training Station',
+    src: '/brain/Cognitive%20training%20station.jpg',
+    alt: 'Cognitive Circuit Training station',
     span: '',
     height: 'h-56',
   },
   {
-    src: '/Focus-Brain-Therapy-3.webp',
-    alt: 'Multiple CCT therapy stations with screens and balance equipment',
-    caption: 'Multi-Station Training Floor',
+    src: '/brain/Multi-station%20training%20floor.jpeg',
+    alt: 'Multi-station training floor',
     span: '',
     height: 'h-56',
   },
   {
-    src: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=900&q=85&auto=format&fit=crop',
-    alt: 'Doctor consulting with patient',
-    caption: 'Personalized Patient Care',
+    src: '/brain/Main%20room.jpeg',
+    alt: 'Focus Brain Therapy main training room',
     span: 'lg:col-span-2',
     height: 'h-56',
   },
@@ -38,7 +34,7 @@ export default function Gallery() {
         {/* Header */}
         <div className="text-center mb-14">
           <div className="text-[#005FDE] font-bold text-xs uppercase tracking-[0.2em] mb-4">
-            Our Facility & Results
+            Our Facility &amp; Results
           </div>
           <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-6">
             Where Recovery Happens
@@ -51,7 +47,7 @@ export default function Gallery() {
 
         {/* Mosaic Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 mb-12">
-          {images.map(({ src, alt, caption, span, height }) => (
+          {images.map(({ src, alt, span, height }) => (
             <div
               key={alt}
               className={`relative rounded-2xl overflow-hidden group cursor-default ${span} ${height} min-h-56`}
@@ -63,28 +59,15 @@ export default function Gallery() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F61]/70 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4">
-                <span className="text-white font-semibold text-sm drop-shadow">{caption}</span>
-              </div>
             </div>
           ))}
         </div>
 
         {/* CTA Strip */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-[#ECFAFF] rounded-2xl px-8 py-6 border border-[#005FDE]/15">
-          <div>
-            <div className="font-black text-[#0A2F61] text-xl mb-1">
-              Ready to start your recovery journey?
-            </div>
-            
+        <div className="flex items-center justify-center bg-[#ECFAFF] rounded-2xl px-8 py-8 border border-[#005FDE]/15">
+          <div className="font-black text-[#0A2F61] text-xl text-center">
+            Build a better brain to build a better life.
           </div>
-          <a
-            href="#contact"
-            className="flex-shrink-0 bg-[#005FDE] hover:bg-[#0D71F7] text-white px-7 py-3.5 rounded-full font-bold transition-colors shadow-md shadow-[#005FDE]/20"
-          >
-            Book Your Evaluation
-          </a>
         </div>
       </div>
     </section>

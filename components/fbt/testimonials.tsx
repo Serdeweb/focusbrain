@@ -1,63 +1,63 @@
-import { Star, Quote } from 'lucide-react'
+'use client'
+
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
+import { useState } from 'react'
 
 const testimonials = [
   {
-    name: 'Margaret T.',
-    age: '68',
-    condition: 'Early-Stage Dementia',
-    quote:
-      "After just 8 weeks at Focus Brain Therapy, my family noticed a real difference. I'm sharper, more present, and feel like myself again. The team truly cares about every patient.",
-    stars: 5,
-    initials: 'MT',
+    name: 'Maria S.',
+    text: "Focus Brain Therapy has been life-changing for me. After my stroke I didn't think I'd ever feel like myself again. Dr. Calagua and her team gave me hope and real results. I'm forever grateful.",
+    initials: 'MS',
   },
   {
-    name: 'Carlos R.',
-    age: '42',
-    condition: 'Post-Concussion Recovery',
-    quote:
-      'I struggled for months after my injury — foggy, off-balance, unable to work. The CCT Program gave me structure and real results. I returned to work in 10 weeks. Life-changing.',
-    stars: 5,
-    initials: 'CR',
+    name: 'David R.',
+    text: "The Cognitive Circuit Training program is incredible. My memory and focus have improved significantly since starting. The entire staff is professional, caring, and truly invested in your progress.",
+    initials: 'DR',
   },
   {
-    name: 'Patricia L.',
-    age: '74',
-    condition: 'Stroke Recovery',
-    quote:
-      "Dr. Calagua's approach was unlike anything I experienced elsewhere. She listened, adjusted my plan weekly, and never gave up on me. I'm walking independently again.",
-    stars: 5,
-    initials: 'PL',
+    name: 'Linda T.',
+    text: "After my concussion I struggled for months. The CCT Program at Focus Brain Therapy gave me structure and results. I'm back to work and feeling like myself again. Highly recommend!",
+    initials: 'LT',
   },
   {
-    name: 'James M.',
-    age: '55',
-    condition: 'Memory & Focus Training',
-    quote:
-      "I came in proactively — no injury, just noticing my memory slipping. The brain maintenance program is incredible. I feel 10 years younger mentally. Highly recommend.",
-    stars: 5,
-    initials: 'JM',
+    name: 'Robert M.',
+    text: "I came in proactively to support my brain health and the program has been amazing. The team is knowledgeable, compassionate, and the results speak for themselves. Five stars without hesitation.",
+    initials: 'RM',
   },
   {
-    name: 'Sofia V.',
-    age: '38',
-    condition: 'Vestibular Disorder',
-    quote:
-      'Alyssa is phenomenal. Her patience and expertise helped me get my balance back after a year of suffering. The multisensory sessions made every visit feel purposeful.',
-    stars: 5,
-    initials: 'SV',
+    name: 'Patricia G.',
+    text: "Alyssa and the whole team are phenomenal. My balance and cognitive function have improved tremendously. Every session feels purposeful and the staff truly cares about your recovery.",
+    initials: 'PG',
   },
   {
-    name: 'Robert K.',
-    age: '61',
-    condition: 'Traumatic Brain Injury',
-    quote:
-      "Dr. Huseboe created something truly special with the CCT Program. The combination of physical, cognitive, and sensory work is genius. I'm back to 95% of my prior function.",
-    stars: 5,
-    initials: 'RK',
+    name: 'James H.',
+    text: "Dr. Lisa and her team created something truly special. The combination of physical, cognitive, and sensory work is unlike anything I've experienced. I'm back to 90% of my prior function.",
+    initials: 'JH',
+  },
+  {
+    name: 'Susan K.',
+    text: "I was skeptical at first but the results after 8 weeks speak for themselves. My family noticed a real difference. I'm sharper, more present, and feel like myself again. Thank you FBT!",
+    initials: 'SK',
+  },
+  {
+    name: 'Carlos V.',
+    text: "The personalized approach here is what sets Focus Brain Therapy apart. They really take the time to understand your specific situation and tailor the program accordingly. Outstanding care.",
+    initials: 'CV',
+  },
+  {
+    name: 'Angela B.',
+    text: "After being diagnosed with mild cognitive impairment I felt hopeless. Focus Brain Therapy changed that. The science behind their program is real and the team is world-class.",
+    initials: 'AB',
   },
 ]
 
+const PER_PAGE = 6
+
 export default function Testimonials() {
+  const [page, setPage] = useState(0)
+  const totalPages = Math.ceil(testimonials.length / PER_PAGE)
+  const visible = testimonials.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE)
+
   return (
     <section id="testimonials" className="py-24 bg-[#0A2F61] relative overflow-hidden">
       <div
@@ -80,54 +80,65 @@ export default function Testimonials() {
             Real Patients.{' '}
             <span className="text-[#0ED8FE]">Real Results.</span>
           </h2>
-          <p className="text-white/65 text-lg max-w-2xl mx-auto">
-            Hear from patients who reclaimed their lives through the Cognitive Circuit Training® Program.
+          <p className="text-white/65 text-lg max-w-2xl mx-auto text-center">
+            Hear from patients who reclaimed their lives
+            <br className="hidden sm:block" />
+            through the Cognitive Circuit Program.
           </p>
         </div>
 
         {/* Testimonial Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map(({ name, age, condition, quote, stars, initials }) => (
+          {visible.map(({ name, text, initials }) => (
             <div
               key={name}
               className="bg-white/8 backdrop-blur-sm border border-white/10 rounded-2xl p-7 hover:bg-white/12 hover:border-[#0ED8FE]/30 transition-all flex flex-col"
             >
-              {/* Stars */}
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: stars }).map((_, i) => (
-                  <Star key={i} size={14} className="text-[#0ED8FE] fill-[#0ED8FE]" />
-                ))}
-              </div>
-
-              {/* Quote */}
-              <div className="relative flex-1 mb-6">
-                <Quote size={20} className="text-[#0ED8FE]/40 absolute -top-1 -left-1" />
-                <p className="text-white/80 text-sm leading-relaxed pl-5 italic">"{quote}"</p>
-              </div>
-
-              {/* Author */}
-              <div className="flex items-center gap-3 border-t border-white/10 pt-5">
+              {/* Google-style header */}
+              <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#005FDE] to-[#0ED8FE] flex items-center justify-center flex-shrink-0">
                   <span className="text-white font-black text-xs">{initials}</span>
                 </div>
                 <div>
-                  <div className="text-white font-bold text-sm">{name}, {age}</div>
-                  <div className="text-[#0ED8FE] text-xs">{condition}</div>
+                  <div className="text-white font-bold text-sm">{name}</div>
+                  <div className="flex gap-0.5 mt-0.5">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} size={12} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
                 </div>
               </div>
+
+              {/* Review text */}
+              <p className="text-white/80 text-sm leading-relaxed flex-1 italic">&ldquo;{text}&rdquo;</p>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-[#005FDE] hover:bg-[#0D71F7] text-white px-8 py-4 rounded-full font-bold text-base transition-all shadow-xl shadow-[#005FDE]/30"
-          >
-            Start Your Recovery Story
-          </a>
-        </div>
+        {/* Navigation arrows */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-4 mt-10">
+            <button
+              onClick={() => setPage((p) => Math.max(0, p - 1))}
+              disabled={page === 0}
+              className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#005FDE] disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors"
+              aria-label="Previous reviews"
+            >
+              <ChevronLeft size={20} className="text-white" />
+            </button>
+            <span className="text-white/60 text-sm">
+              {page + 1} / {totalPages}
+            </span>
+            <button
+              onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+              disabled={page === totalPages - 1}
+              className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#005FDE] disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors"
+              aria-label="Next reviews"
+            >
+              <ChevronRight size={20} className="text-white" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )

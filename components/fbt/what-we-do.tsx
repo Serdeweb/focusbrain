@@ -31,14 +31,13 @@ export default function WhatWeDo() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-6">
-            Introducing the{' '}
-            <span className="text-[#005FDE]">Cognitive Circuit Training®</span>{' '}
-            Program
+            <span className="text-[#005FDE]">Cognitive Circuit Training® (CCT)</span>
           </h2>
-          <p className="text-[#67656E] text-lg max-w-3xl mx-auto leading-relaxed">
-            Our team of medical professionals and therapists will design an individualized, holistic
-            program to address your specific cognitive concerns. We look forward to working with
-            you and your family to help you build a better brain for a better life!
+          <p className="text-[#0A2F61] text-xl font-bold max-w-3xl mx-auto mb-2">
+            Our team is here for you.
+          </p>
+          <p className="text-[#67656E] text-base max-w-3xl mx-auto leading-relaxed text-center">
+            Whether you&apos;re recovering from an injury or proactively supporting your brain health.
           </p>
         </div>
 
@@ -46,7 +45,7 @@ export default function WhatWeDo() {
         <div className="grid lg:grid-cols-2 gap-10 items-center mb-16">
           <div className="relative rounded-3xl overflow-hidden h-80 lg:h-96 shadow-2xl">
             <Image
-              src="/Focus-Brain-Therapy-1.webp"
+              src="/brain/larger%20space%20RCCC%20training%20studio.jpg"
               alt="Focus Brain Therapy facility — CCT training room"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

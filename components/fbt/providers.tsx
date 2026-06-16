@@ -44,10 +44,20 @@ export default function Providers() {
           <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-4">
             Meet our passionate team
           </h2>
-          <p className="text-[#67656E] text-lg max-w-2xl mx-auto">
+          <p className="text-[#67656E] text-lg max-w-2xl mx-auto mb-10">
             We bring together decades of experience in neurological rehabilitation and optimization
             of brain performance.
           </p>
+          {/* Team group photo */}
+          <div className="relative max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-xl">
+            <Image
+              src="/brain/Team%20photo.jpg"
+              alt="Focus Brain Therapy team"
+              width={900}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+          </div>
         </div>
 
         {/* Provider Cards */}

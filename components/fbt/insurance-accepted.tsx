@@ -73,8 +73,10 @@ export default function InsuranceAccepted() {
           <h2 className="text-3xl lg:text-4xl font-black text-[#0A2F61] mb-3">
             Insurance Accepted
           </h2>
-          <p className="text-[#67656E] text-lg max-w-2xl mx-auto mb-10">
-            Most PPO Plans, Medicare, State Workers&apos; Compensation, Federal Workers&apos; Compensation
+          <p className="text-[#67656E] text-lg max-w-2xl mx-auto mb-10 text-center">
+            Medicare, PPO Plans, State Workers&apos; Compensation, Federal Workers&apos; Compensation
+            <br />
+            Financing Available
           </p>
 
           {/* Insurance placeholders */}

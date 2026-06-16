@@ -23,8 +23,8 @@ export default function Contact() {
           <h2 className="text-4xl lg:text-5xl font-black text-[#0A2F61] leading-tight mb-6">
             Start Your Recovery Today
           </h2>
-          <p className="text-[#67656E] text-lg max-w-2xl mx-auto">
-            Schedule a free consultation. Our team is here to guide and coach you every step of the way.
+          <p className="text-[#67656E] text-lg max-w-2xl mx-auto italic text-center">
+            Schedule a free consultation. Our team is here to guide you and coach you every step of the way.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Phone } from 'lucide-react'
 import Image from 'next/image'
 
 const mainLinks = [
@@ -25,18 +25,35 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'shadow-md' : ''}`}>
-      {/* Main nav bar — pale blue */}
+
+      {/* Top announcement bar */}
+      <div className="bg-[#0A2F61] text-white text-sm py-2 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-1 sm:gap-0">
+          <span className="text-white/80 text-xs sm:text-sm text-center">
+            Medicare &amp; PPO Insurance Accepted &nbsp;|&nbsp; Financing Available
+          </span>
+          <a
+            href="tel:9544244240"
+            className="flex items-center gap-1.5 text-[#0ED8FE] font-bold text-xs sm:text-sm hover:text-white transition-colors"
+          >
+            <Phone size={13} />
+            (954) 424-4240
+          </a>
+        </div>
+      </div>
+
+      {/* Main nav bar */}
       <div className="bg-[#EBF5FF] border-b border-[#005FDE]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18 py-3">
             {/* Logo */}
             <a href="#" className="flex items-center flex-shrink-0">
               <Image
-                src="/Focus-Brain-Therapy-Logo.avif"
+                src="/brain/Logo_FBT.png"
                 alt="Focus Brain Therapy"
                 width={190}
                 height={62}
-                className="h-14 w-auto object-contain brightness-110 contrast-110"
+                className="h-14 w-auto object-contain"
                 priority
               />
             </a>

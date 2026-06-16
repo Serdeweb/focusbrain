@@ -1,10 +1,12 @@
 import { MapPin, Phone, Globe } from 'lucide-react'
+import Image from 'next/image'
 
 const navLinks = [
-  { label: 'About Us', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Who We Help', href: '#who-we-help' },
+  { label: 'What We Do', href: '#services' },
+  { label: 'Who We Help', href: '#how-we-help' },
+  { label: 'Testimonials', href: '#testimonials' },
   { label: 'Our Team', href: '#team' },
+  { label: 'Podcast', href: '#podcasts' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -19,31 +21,42 @@ export default function Footer() {
         }}
       />
 
+      {/* CTA Section */}
+      <div className="relative z-10 border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+          <h2 className="text-3xl lg:text-4xl font-black text-white mb-3">
+            Start Your Recovery Today
+          </h2>
+          <p className="text-white/70 text-base italic max-w-xl mx-auto">
+            Schedule a free consultation. Our team is here to guide you and coach you every step of the way.
+          </p>
+        </div>
+      </div>
+
       {/* Main Footer */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 rounded-full bg-[#005FDE] flex items-center justify-center shadow-lg">
-                <span className="text-white font-black text-xl">F</span>
-              </div>
-              <div>
-                <div className="font-black text-white text-base tracking-tight leading-tight">
-                  FOCUS BRAIN
-                </div>
-                <div className="text-[#0ED8FE] text-[10px] font-bold tracking-[0.2em] uppercase">
-                  Therapy
-                </div>
+            <div className="mb-5">
+              <Image
+                src="/brain/Logo_FBT.png"
+                alt="Focus Brain Therapy"
+                width={160}
+                height={52}
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
+              <div className="mt-2 font-semibold text-white text-sm tracking-tight">
+                Focus Brain Therapy
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6 max-w-sm">
-              South Florida's first personalized brain therapy center. Specializing in neurological
+              South Florida&apos;s first personalized brain therapy center. Specializing in neurological
               assessment, diagnosis, treatment, and rehabilitation through our proprietary
               Cognitive Circuit Training® Program.
             </p>
             <div className="inline-flex items-center gap-2 bg-[#005FDE]/30 border border-[#0ED8FE]/20 rounded-full px-4 py-2 text-[#0ED8FE] text-xs font-semibold">
-              We accept Medicare & most insurance
+              We accept Medicare &amp; most insurance
             </div>
           </div>
 
@@ -91,23 +104,6 @@ export default function Footer() {
               <div className="flex gap-3">
                 <Globe size={15} className="text-[#0ED8FE] flex-shrink-0 mt-0.5" />
                 <span className="text-white/60 text-sm">FocusBrainTherapy.com</span>
-              </div>
-            </div>
-
-            {/* Social (placeholders) */}
-            <div className="mt-6">
-              <div className="text-[#0ED8FE] font-bold text-xs uppercase tracking-[0.15em] mb-3">
-                Follow Us
-              </div>
-              <div className="flex gap-2">
-                {['f', 'in', 'ig'].map((s) => (
-                  <div
-                    key={s}
-                    className="w-8 h-8 bg-white/10 hover:bg-[#005FDE] rounded-lg flex items-center justify-center cursor-pointer transition-colors text-white/60 hover:text-white text-xs font-bold"
-                  >
-                    {s}
-                  </div>
-                ))}
               </div>
             </div>
           </div>
