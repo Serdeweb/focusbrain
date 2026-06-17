@@ -51,7 +51,7 @@ export default function Providers() {
           {/* Team group photo */}
           <div className="relative max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/brain/Team%20photo.jpg"
+              src="/today/Team%20Photo%20v2.0.jpg"
               alt="Focus Brain Therapy team"
               width={900}
               height={600}

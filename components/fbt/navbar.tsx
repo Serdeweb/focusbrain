@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
+import Image from 'next/image'
 
 const mainLinks = [
+  { label: 'Home', href: '/' },
   { label: 'What We Do', href: '#services' },
   { label: 'Who We Help', href: '#how-we-help' },
   { label: 'Testimonials', href: '#testimonials' },
@@ -41,10 +43,29 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* "Build a better brain" banner */}
+      <div className="bg-[#005FDE] py-2.5 px-4 text-center">
+        <p className="text-white font-black text-lg sm:text-2xl tracking-wide">
+          Build a better brain&hellip; Build a better life
+        </p>
+      </div>
+
       {/* Main nav bar */}
       <div className="bg-[#EBF5FF] border-b border-[#005FDE]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18 py-3">
+
+            {/* Logo as home link (desktop) */}
+            <a href="/" className="hidden md:flex items-center flex-shrink-0">
+              <Image
+                src="/brain/Logo_FBT.png"
+                alt="Focus Brain Therapy — Home"
+                width={160}
+                height={52}
+                className="h-12 w-auto object-contain"
+                priority
+              />
+            </a>
 
             {/* Mobile: CTA button where logo was */}
             <a
@@ -55,7 +76,7 @@ export default function Navbar() {
             </a>
 
             {/* Desktop Nav */}
-            <div className="hidden md:flex items-center gap-6">
+            <div className="hidden md:flex items-center gap-5">
               {mainLinks.map(({ label, href }) => (
                 <a
                   key={href}

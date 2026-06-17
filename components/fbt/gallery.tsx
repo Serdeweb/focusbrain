@@ -8,20 +8,20 @@ const images = [
     height: 'h-72 lg:h-full',
   },
   {
-    src: '/brain/Cognitive%20training%20station.jpg',
-    alt: 'Cognitive Circuit Training station',
-    span: '',
-    height: 'h-56',
-  },
-  {
-    src: '/brain/Multi-station%20training%20floor.jpeg',
-    alt: 'Multi-station training floor',
-    span: '',
-    height: 'h-56',
-  },
-  {
     src: '/brain/Main%20room.jpeg',
     alt: 'Focus Brain Therapy main training room',
+    span: '',
+    height: 'h-56',
+  },
+  {
+    src: '/today/Replacement%20of%20Brown%20Image%20v2.0.JPG',
+    alt: 'Focus Brain Therapy training area',
+    span: '',
+    height: 'h-56',
+  },
+  {
+    src: '/today/Bottom%20image%20-%20Green%20Room.JPG',
+    alt: 'Focus Brain Therapy green room',
     span: 'lg:col-span-2',
     height: 'h-56',
   },

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-40 pb-16 bg-[#EEF4FB]">
+    <section className="relative overflow-hidden pt-56 pb-16 bg-[#EEF4FB]">
       {/* Subtle dot pattern */}
       <div
         className="absolute inset-0 opacity-[0.06]"
@@ -44,18 +44,6 @@ export default function Hero() {
               through its proprietary{' '}
               <span className="text-[#005FDE] font-semibold">Cognitive Circuit Training® program</span>.
             </p>
-
-            {/* Badges — moved here where buttons were */}
-            <div className="flex flex-wrap gap-2 mb-6">
-              <div className="inline-flex items-center gap-2 bg-[#EBF5FF] border border-[#005FDE]/30 text-[#005FDE] px-4 py-2 rounded-full text-sm font-bold tracking-wide">
-                <span className="w-2 h-2 bg-[#005FDE] rounded-full" />
-                Build a Better Brain
-              </div>
-              <div className="inline-flex items-center gap-2 bg-[#EBF5FF] border border-[#005FDE]/30 text-[#005FDE] px-4 py-2 rounded-full text-sm font-bold tracking-wide">
-                <span className="w-2 h-2 bg-[#005FDE] rounded-full" />
-                Build a Better Life
-              </div>
-            </div>
 
             <div className="flex flex-col gap-1.5 text-[#67656E]">
               <div className="flex items-center gap-2">

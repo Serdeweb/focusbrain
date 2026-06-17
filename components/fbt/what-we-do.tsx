@@ -52,11 +52,6 @@ export default function WhatWeDo() {
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F61]/60 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6">
-              <div className="bg-white/15 backdrop-blur-sm border border-white/25 rounded-2xl px-5 py-3 inline-block">
-                <span className="text-white font-bold text-sm">Our Facility — Davie, FL</span>
-              </div>
-            </div>
           </div>
 
           <div className="bg-[#0A2F61] rounded-3xl px-8 py-10 text-white relative overflow-hidden h-full flex items-center">

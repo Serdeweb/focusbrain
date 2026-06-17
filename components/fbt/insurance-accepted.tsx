@@ -76,7 +76,7 @@ export default function InsuranceAccepted() {
           <p className="text-[#67656E] text-lg max-w-2xl mx-auto mb-10 text-center">
             Medicare, PPO Plans, State Workers&apos; Compensation, Federal Workers&apos; Compensation
             <br />
-            Financing Available
+            <em>Financing Available</em>
           </p>
 
           {/* Insurance placeholders */}
@@ -91,13 +91,16 @@ export default function InsuranceAccepted() {
             ))}
           </div>
 
-          {/* Contact callout */}
-          <div className="inline-flex items-center gap-3 bg-white border border-[#005FDE]/20 rounded-full px-6 py-3 shadow-sm">
+          {/* Contact link — clickable */}
+          <a
+            href="tel:9544244240"
+            className="inline-flex items-center gap-3 bg-white border border-[#005FDE]/20 rounded-full px-6 py-3 shadow-sm hover:border-[#005FDE]/50 hover:shadow-md transition-all"
+          >
             <Phone size={15} className="text-[#005FDE] flex-shrink-0" />
             <span className="text-[#0A2F61] font-medium text-base">
               Contact our office to verify coverage and eligibility.
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </section>

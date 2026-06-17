@@ -83,7 +83,7 @@ export default function Testimonials() {
           <p className="text-white/65 text-lg max-w-2xl mx-auto text-center">
             Hear from patients who reclaimed their lives
             <br className="hidden sm:block" />
-            through the Cognitive Circuit Program.
+            through the Cognitive Circuit Training Program&reg;
           </p>
         </div>
 
@@ -139,6 +139,11 @@ export default function Testimonials() {
             </button>
           </div>
         )}
+
+        {/* CTA text below arrows */}
+        <p className="text-center text-white/50 text-base mt-6 italic">
+          Build a better brain to build a better life.
+        </p>
       </div>
     </section>
   )

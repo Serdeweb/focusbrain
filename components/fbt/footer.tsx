@@ -55,8 +55,9 @@ export default function Footer() {
               assessment, diagnosis, treatment, and rehabilitation through our proprietary
               Cognitive Circuit Training® Program.
             </p>
-            <div className="inline-flex items-center gap-2 bg-[#005FDE]/30 border border-[#0ED8FE]/20 rounded-full px-4 py-2 text-[#0ED8FE] text-xs font-semibold">
-              We accept Medicare &amp; most insurance
+            <div className="bg-[#005FDE]/30 border border-[#0ED8FE]/20 rounded-2xl px-4 py-3 text-[#0ED8FE] text-xs font-semibold text-center leading-relaxed">
+              Medicare, PPO Plans, State Workers&apos; Compensation, Federal Workers&apos; Compensation
+              <br /><em>Financing Available</em>
             </div>
           </div>
 
